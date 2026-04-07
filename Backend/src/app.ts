@@ -28,6 +28,10 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
+console.log("DIR:", __dirname);
+console.log("PUBLIC:", path.join(__dirname, "../public"));
+console.log("INDEX:", path.join(__dirname, "../public/index.html"));
+
 app.post("/get-graph",async (req,res)=>{
     const {prompt}=req.body;  
     const response=await runGraph(prompt);
