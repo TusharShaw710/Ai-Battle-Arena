@@ -81,12 +81,11 @@ export default function App() {
     try {
       // ── Replace mockBattle with your real API ──────────────────────────────
       
-      const response=await axios.post("http://localhost:3000/get-graph",{
+      const response=await axios.post("https://ai-battle-arena-1-o1fh.onrender.com/get-graph",{
         prompt:prompt
       });
 
       const data=response.data.result;
-      console.log(data);
       // ──────────────────────────────────────────────────────────────────────
 
       setResult(data)
