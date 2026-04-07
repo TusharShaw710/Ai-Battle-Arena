@@ -9,7 +9,7 @@ export const cohereModel=new ChatCohere({
 });
 
 export const geminiModel=new ChatGoogle({
-    model:"gemini-flash-latest",
+    model:"gemini-2.5-flash",
     apiKey:config.geminiApiKey
 });
 
